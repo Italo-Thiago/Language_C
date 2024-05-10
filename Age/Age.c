@@ -2,12 +2,26 @@
 
 int main() 
 {
-    int idade = 0;
+    /*
+    int age = 0;
 
-    printf("Valor inicial da idade: %d.\n", idade);
+    printf("Initial value of age: %d.\n", age);
 
-    printf("Digite uma idade: \n");
-    scanf("%d", &idade);
+    printf("Enter an age: \n");
+    scanf("%d", &age);
 
-    printf("Idade informada: %d.\n",idade);
+    printf("Age entered: %d.\n", age);
+    */
+
+    int age = 0;
+    float weight = 0;
+
+    printf("Enter an age:\n");
+    scanf("%d", &age);
+
+    printf("Enter a weight:\n");
+    scanf("%f", &weight);
+
+    printf("Informed age: %d.\n", age);
+    printf("Informed weight: %f.\n", weight);
 }
