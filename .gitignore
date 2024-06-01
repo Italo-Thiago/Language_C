@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+Pointer/.vscode/tasks.json
+Pointer/variable_and_memory.c
