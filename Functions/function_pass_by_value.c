@@ -10,7 +10,7 @@ int Soma (int x, int y)
     printf("&z = %p, Z = %d\n\n", &z, z);
 
     return z;
-}
+    }
 int main()
 {
     int a = 10;
