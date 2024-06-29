@@ -12,7 +12,7 @@ struct float_vector
 };
 
 // função "privada" ==> não está disponível para os usuários/programas, ou outros arquivos que usam o float_vector.h
-bool IsFull(const FloatVector *vec)
+bool _IsFull(const FloatVector *vec)
 {
     return vec->size == vec->capacity;
 }
@@ -109,7 +109,7 @@ float Get(const FloatVector *vec, int index)
  */
 void Append(FloatVector *vec, float val)
 {
-    if (IsFull(vec))
+    if (_IsFull(vec))
     {
         printf("ERROR in 'append'\n");
         printf("Vector is full'\n");
@@ -155,4 +155,46 @@ void Print(const FloatVector *vec)
         printf("[%d] = %f\n", i,vec->data[i]);
     }
     puts("-----------------------------");
+}
+
+// Implementation of Exercises
+
+
+/**
+ * @brief Remove o elemento da posição "index". Move todos os elementos subsequentes para a esquerda após a remoção, Se o índice for inválido, nada acontece
+ * 
+ * @param vec 
+ * @param index 
+ */
+void Remove(const FloatVector *vec, int index)
+{
+    if(vec->capacity >= index)
+    {
+        exit(EXIT_FAILURE);
+    }
+
+    
+
+
+}
+
+/**
+ * @brief Limpa o vetor, removendo todos os seus elementos
+ * 
+ * @param vec 
+ */
+void Erase(FloatVector *vec)
+{
+
+}
+
+/**
+ * @brief Retorna uma cópia/clone do vetor
+ * 
+ * @param vec 
+ * @return FloatVector* 
+ */
+FloatVector *Clone(FloatVector *vec)
+{
+
 }

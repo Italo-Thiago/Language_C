@@ -68,6 +68,7 @@ Book** CreateVectorBooks (VectorBook vectorbook)
 }
 
 // 2. Criar uma função para destruir o vetor de livros
+// Necessita de melhorias.
 void DestroyVectorBooks (Book **vectorReference, int vectorSize)
 {
 
@@ -77,8 +78,8 @@ void DestroyVectorBooks (Book **vectorReference, int vectorSize)
         DestroyBook(&vectorReference[i]);
     }
     free(vectorReference);
-    **vectorReference = NULL;
-}
+    book = NULL;
+} 
 
 int main()
 {

@@ -1,3 +1,6 @@
+#ifndef FLOAT_VECTOR_H
+#define FLOAT_VECTOR_H
+
 /*************************************** INTERFACE PÚBLICA ****************************************/
 typedef struct float_vector FloatVector;
 
@@ -11,3 +14,10 @@ void Append(FloatVector *vec, float val);
 void Set(FloatVector *vec, int index, float val);
 void Print(const FloatVector *vec); 
 
+// Exercises
+void Remove(const FloatVector *vec, int index);
+void Erase(FloatVector *vec);
+FloatVector *Clone(FloatVector *vec);
+
+
+#endif
